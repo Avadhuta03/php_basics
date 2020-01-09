@@ -40,7 +40,20 @@
 
 
 			<li>
-				<strong>Status :</strong> <?= $task['completed'] ? 'Complete' : 'Incomplete' ?>	
+
+				<strong>Status : </strong>
+				
+				<?php if($task['completed']) : ?>
+
+				  		<span class="icon">&#9989;</span>
+
+
+				 <?php else : ?>
+
+				   			Incomplete
+
+				  <?php endif; ?>
+
 			</li>
 
 		</ul>

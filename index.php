@@ -2,17 +2,17 @@
 
 
 
-
-$task = [
-
-	'title' => 'Create a website',
-	'description' => 'website for education purpose with pure php & html',
-	'assigned to' => 'avadhuta03',
-	'due' => 'today',
-	'completed' => true
-
-];
+require 'functions.php';
 
 
-require 'index.view.php';
+
+dd('hello world');
+dd(['dog', 'cat']);
+
+
+checkAge(21);
+
+
+
+// require 'index.view.php';
 

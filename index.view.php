@@ -13,9 +13,9 @@
 
 		<ul>
 
-			<?php foreach($animals as $animal) : ?>
+			<?php foreach($person as $feature => $val) : ?>
 
-			  <li><strong><?= $animal; ?></strong></li>
+			  <li><strong><?= $feature; ?></strong>= <?= $val ?></li>
 
 			<?php endforeach; ?>
 

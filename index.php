@@ -1,12 +1,34 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+
+	<meta charset="utf-8">
+
+	<style>
+		
+		header{
+
+			background: grey;
+			padding: 2em;
+			text-align: center;
+		}
+
+	</style>
+
+</head>
+
+<body>
 
 
+	<header>
 
-  $greeting =  "Hello!";
+		<h1><?= htmlspecialchars($_GET['name']);   ?></h1>
 
-  $name = "People of Earth.";
+	</header>
 
+</body>
 
-  echo "{$greeting} {$name}"." How are you all?";
+</html>
 
 

@@ -11,13 +11,37 @@
 <body>
 
 
+
+		<h1>To Do Task</h1>
+
 		<ul>
 
-			<?php foreach($person as $feature => $val) : ?>
+			<li>
+				<strong>Name :</strong> <?= $task['title'] ?>	
+			</li>
 
-			  <li><strong><?= $feature; ?></strong>= <?= $val ?></li>
 
-			<?php endforeach; ?>
+
+			<li>
+				<strong>Description :</strong> <?= $task['description'] ?>	
+			</li>
+
+
+
+			<li>
+				<strong>Responsible Person :</strong> <?= $task['assigned to'] ?>	
+			</li>
+
+
+			<li>
+				<strong>Due Date :</strong> <?= $task['due'] ?>	
+			</li>
+
+
+
+			<li>
+				<strong>Status :</strong> <?= $task['completed'] ? 'Complete' : 'Incomplete' ?>	
+			</li>
 
 		</ul>
 

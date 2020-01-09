@@ -5,27 +5,23 @@
 
 	<meta charset="utf-8">
 
-	<style>
-		
-		header{
-
-			background: grey;
-			padding: 2em;
-			text-align: center;
-		}
-
-	</style>
-
+	
 </head>
 
 <body>
 
 
-	<header>
+		<ul>
 
-		<h1><?= $greeting;   ?></h1>
+			<?php foreach($animals as $animal) : ?>
 
-	</header>
+			  <li><strong><?= $animal; ?></strong></li>
+
+			<?php endforeach; ?>
+
+		</ul>
+
+	
 
 </body>
 
